@@ -23,7 +23,7 @@
     protected override async Task OnInitializedAsync()
     {
         hubConnection = new HubConnectionBuilder()
-            .WithUrl("https://tprojectfunc.azurewebsites.net/api")
+            .WithUrl("https://tprojectfunc.azurewebsites.net/api/negotiate")
             .Build();
 
         hubConnection.On<string>("ReceiveMessage", (message) =>
@@ -37,6 +37,7 @@
 
     private async Task SendMessage()
     {
+
         await hubConnection.SendAsync("SendMessage", userInput, messageInput);
         messageInput = string.Empty;
     }
