@@ -23,7 +23,7 @@
     protected override async Task OnInitializedAsync()
     {
         hubConnection = new HubConnectionBuilder()
-            .WithUrl("https://tprojectfunc.azurewebsites.net/api/negotiate")
+            .WithUrl("https://tprojectfunc.azurewebsites.net/api")
             .Build();
 
         hubConnection.On<string>("ReceiveMessage", (message) =>
