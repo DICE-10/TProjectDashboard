@@ -1,9 +1,5 @@
 ﻿{
-  "routes": [
-    {
-      "route": "/*",
-      "serve": "/index.html",
-      "baseHref": "/"
-    }
-  ]
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  }
 }
