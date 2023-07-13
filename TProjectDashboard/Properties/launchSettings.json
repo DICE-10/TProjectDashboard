@@ -2,7 +2,6 @@
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
-    "commandLineArgs": "--pathbase=/relative-URL-path",
     "iisExpress": {
       "applicationUrl": "http://localhost:56509",
       "sslPort": 44348
